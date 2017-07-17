@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="36dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.brioal.circleimage.CircleImageView
+        android:id="@+id/main_head_iv_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_head_default"
+        app:srcCompat="@android:drawable/sym_def_app_icon"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/head_btn_login_bg"
+            android:gravity="center"
+            android:text="登陆/注册"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/main_head_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户ID"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/main_head_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/main_head_tv_name"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="任务"
+            android:textColor="@android:color/white"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
